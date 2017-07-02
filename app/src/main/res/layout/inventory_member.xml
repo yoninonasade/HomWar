@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/yoniBackGroundColor">
+
+    <ImageView
+        android:id="@+id/inventoryImagetextView"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:padding="5dp"
+        android:contentDescription="@string/imageDescription"
+        android:background="@color/yoniBackGroundColor"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:background="@color/yoniBackGroundColor">
+
+
+            <TextView
+                android:id="@+id/inventoryItemNametextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temp_value_string"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:textColor="#33CC33"
+                android:background="@color/yoniBackGroundColor"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/inventoryItemAmounttextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:text="@string/temp_value_string"
+                android:background="@color/yoniBackGroundColor"/>
+        </LinearLayout>
+</LinearLayout>

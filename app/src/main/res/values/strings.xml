@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HomWAr</string>
+
+    // Add To Inventory Screen //
+    <string name="enter_item_name_edit_text">שם הפריט</string>
+    <string name="enter_item_amount_edit_text">כמות הפריט</string>
+    <string name="done_button">סיום</string>
+    <string name="add_image_button_text">הוספת תמונה</string>
+
+    // Inventory Screen //
+    <string name="temp_value_string">tempValue</string>
+    <string name="imageDescription">itemInInventoryPicture</string>
+
+    // Update Item Screen //
+    <string name="remove_amount">הסר כמות</string>
+    <string name="adding_amount">הוסף כמות</string>
+    <string name="AmountToChange">כמות</string>
+    <string name="delete_item">מחיקת המוצר</string>
+
+    // Home Screen //
+    <string name="Inventory_button">צפייה מלאי</string>
+    <string name="add_item_button">הוספת פריט</string>
+
+
+
+</resources>

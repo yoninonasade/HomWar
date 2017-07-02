@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yoniBackGroundColor">
+
+
+    <TextView
+        android:id="@+id/itemNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/temp_value_string"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@color/yoniBackGroundColor"
+        android:textColor="#374478"/>
+
+    <EditText
+        android:id="@+id/updateAmountText"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:hint="@string/AmountToChange"
+        android:layout_below="@+id/itemNameText"
+        android:layout_centerHorizontal="true"
+        android:textColor="#374478"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/updateAmountText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp">
+
+        <Button
+            android:id="@+id/btn_remove"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:onClick="RemoveButtonClicked"
+            android:text="@string/remove_amount"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:onClick="AddButtonClicked"
+            android:text="@string/adding_amount"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonshape"
+        android:text="@string/delete_item"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:onClick="Delete_Item"/>
+
+</RelativeLayout>

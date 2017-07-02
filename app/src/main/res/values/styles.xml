@@ -1,0 +1,16 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:background">#374478</item>
+
+    </style>
+
+    <style name="NoActionBar" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#374478</item>
+    </style>
+
+</resources>

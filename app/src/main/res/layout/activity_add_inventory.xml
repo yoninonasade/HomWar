@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yonisade.warehouse.AddInventory"
+    android:background="@color/yoniBackGroundColor">
+
+    <EditText
+        android:id="@+id/EnterNewItemName"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="47dp"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_item_name_edit_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/EnterNewItemAmount"
+        android:layout_alignStart="@+id/EnterNewItemAmount"
+        android:gravity="center"
+        android:textColor="#374478"/>
+
+    <EditText
+        android:id="@+id/EnterNewItemAmount"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/EnterNewItemName"
+        android:layout_marginTop="24dp"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/enter_item_amount_edit_text"
+        android:gravity="center"
+        android:textColor="#374478"/>
+
+    <Button
+        android:id="@+id/AddImageButton"
+        android:layout_marginTop="33dp"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="@string/add_image_button_text"
+        android:layout_below="@+id/EnterNewItemAmount"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:gravity="center"
+        android:onClick="takePicture_onClick"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/imageDescription"
+        android:layout_above="@+id/addYoInventoryDone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:background="@color/yoniBackGroundColor"
+        />
+
+    <Button
+        android:id="@+id/addYoInventoryDone"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/done_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:onClick="DoneButtonClicked"
+        android:background="@drawable/buttonshape"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"/>
+
+</RelativeLayout>
